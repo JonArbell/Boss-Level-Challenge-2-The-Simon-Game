@@ -1,20 +1,25 @@
 body{
+    color: #FEF2BF;
     margin: 0;
     background-color: #011F3F;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
 }
 header{
-    margin-top: 5%;
+    margin-top: 3.7%;
     margin-bottom: 3%;
 }
 h1{
-    text-align: center;
-    color: #FEF2BF;
-    font-family: 'Press Start 2P', cursive;
     font-size: 50px;
+}
+
+footer{
+    font-family: cursive;
+    font-size: 12px;
 }
 
 main{
@@ -23,6 +28,7 @@ main{
     grid-template-columns: 1fr 1fr;
     height: 575px;
     width: 575px;
+    margin-bottom: 2.5%;
 }
 
 button{
@@ -58,3 +64,4 @@ button{
 .gameOver{
     background-color: rgb(133, 0, 0);
 }
+
