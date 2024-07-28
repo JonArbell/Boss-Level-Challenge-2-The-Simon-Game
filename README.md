@@ -25,8 +25,8 @@
 * Visual Effects: Buttons light up and animate to indicate active colors.
 * Game Over: The game ends if the player fails to repeat the sequence correctly.
 
-## How to play 
-* Click here: https://jonarbell.github.io/Boss-Level-Challenge-2-The-Simon-Game/
+## Where to play 
+* Click here: [Boss Level Challenge 2 - The Simon Game] (https://jonarbell.github.io/Boss-Level-Challenge-2-The-Simon-Game/)
 
 ## Course Information
 
