@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    background-color: #011F3F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+h1{
+    text-align: center;
+    color: #FEF2BF;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+}
+
+main{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 575px;
+    width: 575px;
+}
+
+button{
+    justify-self: center;
+    align-self: center;
+    height: 250px;
+    width: 250px;
+    border-radius: 20%;
+    border: 10px solid black;
+    cursor: pointer;
+}
+
+#green{
+    background-color: green;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#red{
+    background-color: red;
+}
+
+#blue{
+    background-color: blue;
+}
+
+.shadowClick{
+    box-shadow: 0 0 30px rgb(255, 255, 255);
+}
+
+.gameOver{
+    background-color: rgb(133, 0, 0);
+}
