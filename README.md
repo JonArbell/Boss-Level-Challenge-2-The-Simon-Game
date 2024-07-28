@@ -10,6 +10,7 @@
 * `index.html`: The main HTML file that sets up the structure of the game.
 * `style.css`: Contains the CSS for styling the game interface.
 * `script.js`: JavaScript file that handles the game logic and interactions.
+* `img/`: Directory containing an icon for the webpage.
 * `sounds/`: Directory containing audio files used for the game.
 
 ## Technologies Used
