@@ -37,7 +37,7 @@ function changeColor(color){
 
     setTimeout(()=>{
         button.classList.remove('shadowClick');
-    },100);
+    },200);
 
 }
 
