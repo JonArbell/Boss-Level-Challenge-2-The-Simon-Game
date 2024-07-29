@@ -40,7 +40,7 @@ function changeColor(color){
     },200);
 
 }
-
+let isClicked = false;
 function changeAudio(color){
     const aud = new Audio(`./sounds/${color}.mp3`);
     aud.play();
@@ -50,7 +50,7 @@ let level = 0;
 
 function start(){
     level++;
-
+    isClicked = true;
     document.querySelector('header h1').textContent =  `Level ${level}`;
     addPattern();
     
@@ -98,11 +98,14 @@ function addPattern(){
 }
 
 function playerMove(){
+
+    if(isClicked){
+        document.querySelectorAll('button').forEach(button =>{
+            button.addEventListener('click',playerMoveHandle);
+        });
+        
+    }
  
-    document.querySelectorAll('button').forEach(button =>{
-        button.addEventListener('click',playerMoveHandle);
-    });
-    
 }
 
 function playerMoveHandle(event){
@@ -115,11 +118,10 @@ function playerMoveHandle(event){
     }
     
     const color = event.target.id;
-    
+    playerPattern.push(color);
     changeAudio(color);
     changeColor(color);
-    playerPattern.push(color);
-
+    
     checkMoves();
 }
 
@@ -147,7 +149,7 @@ function gameOver(){
     changeAudio('wrong');
     document.querySelector('header h1').textContent = 'Game Over!, Refresh to play again!';
     document.querySelector('body').classList.add('gameOver');
-
+    isClicked = false;
     setTimeout(()=>{
         document.querySelector('body').classList.remove('gameOver');
     },75);
